@@ -17,47 +17,47 @@ const SkipHire = () => {
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/4-yarder-skip.jpg", // Added image path
     },
     {
-      id: 2,
-      size: "5 Yards",
-      description: "Perfect for medium renovations or house clearances",
-      price: 3300,
-      duration: "14 day hire period",
-      
-      popular: true,
-      image:
+        id: 2,
+        size: "5 Yards",
+        description: "Perfect for medium renovations or house clearances",
+        price: 3300,
+        duration: "14 day hire period",
+        
+        popular: true,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg", // Added image path
     },
     {
-      id: 3,
-      size: "6 Yards",
-      description: "Great for large projects or construction waste",
-      price: 3325,
-      duration: "7 day hire period",
-      
-      popular: false,
-      image:
+        id: 3,
+        size: "6 Yards",
+        description: "Great for large projects or construction waste",
+        price: 3325,
+        duration: "7 day hire period",
+        
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/6-yarder-skip.jpg", // Added image path
     },
     {
-      id: 4,
-      size: "8 Yards",
-      description: "For substantial building or demolition projects",
-      price: 3800,
-      duration: "7 day hire period",
-      
-      popular: false,
-      image:
+        id: 4,
+        size: "8 Yards",
+        description: "For substantial building or demolition projects",
+        price: 3800,
+        duration: "7 day hire period",
+        
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/8-yarder-skip.jpg", // Added image path
     },
     {
-      id: 5,
-      size: "10 Yards",
-      description: "Maximum capacity for large-scale projects",
-      price: 4200,
-      duration: "14 day hire period",
-      
-      popular: false,
-      image:
+        id: 5,
+        size: "10 Yards",
+        description: "Maximum capacity for large-scale projects",
+        price: 4200,
+        duration: "14 day hire period",
+        
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/10-yarder-skip.jpg", // Added image path
     },
     {
@@ -72,34 +72,34 @@ const SkipHire = () => {
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/12-yarder-skip.jpg", // Added image path
     },
     {
-      id: 7,
-      size: "14 Yards",
-      description: "Our largest skip for industrial projects",
-      price: 4800,
-      duration: "7 day hire period",
-      
-      popular: false,
-      image:
+        id: 7,
+        size: "14 Yards",
+        description: "Our largest skip for industrial projects",
+        price: 4800,
+        duration: "7 day hire period",
+        
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/14-yarder-skip.jpg", // Added image path
     },
     {
-      id: 8,
-      size: "16 Yards",
-      description: "Our largest skip for industrial projects",
-      price: 4800,
-      duration: "7 day hire period",
-      popular: false,
-      image:
+        id: 8,
+        size: "16 Yards",
+        description: "Our largest skip for industrial projects",
+        price: 4800,
+        duration: "7 day hire period",
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/16-yarder-skip.jpg", // Added image path
     },
     {
-      id: 9,
-      size: "20 Yards",
-      description: "Our largest skip for industrial projects",
-      price: 4800,
-      duration: "7 day hire period",
-      popular: false,
-      image:
+        id: 9,
+        size: "20 Yards",
+        description: "Our largest skip for industrial projects",
+        price: 4800,
+        duration: "7 day hire period",
+        popular: false,
+        image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg", // Added image path
     },
     {
@@ -125,12 +125,13 @@ const SkipHire = () => {
 
   // Check if skip is not allowed on road (10+ yards)
   const isNotAllowedOnRoad = (size) => {
-    const yardSize = parseInt(size);
+      const yardSize = parseInt(size);
     return yardSize >= 10;
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
@@ -144,31 +145,31 @@ const SkipHire = () => {
       {/* Skip Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {skipSizes.map((skip) => (
-          <div
+            <div
             key={skip.id}
             className={` relative rounded-lg border p-6 transition-all duration-200 shadow-sm hover:shadow-lg
-              ${
-                selectedSkip === skip.id
-                  ? "border-blue-700 bg-blue-900 text-white"
-                  : "border-blue-900 bg-white hover:bg-gray-300 "
-              }
-              ${skip.popular ? "border-t-4 border-orange-500" : ""}
-              ${
-                isNotAllowedOnRoad(skip.size)
-                //   ? "hover:bg-blue-100"
-                //   : "hover:bg-blue-50"
-              }`}
-          >
+                ${
+                    selectedSkip === skip.id
+                    ? "border-blue-700 bg-blue-900 text-white"
+                    : "border-blue-900 bg-white hover:bg-gray-300 "
+                }
+                ${skip.popular ? "border-t-4 border-orange-500" : ""}
+                ${
+                    isNotAllowedOnRoad(skip.size)
+                    //   ? "hover:bg-blue-100"
+                    //   : "hover:bg-blue-50"
+                }`}
+                >
             {/* Popular Badge */}
             {skip.popular && (
-              <div className="absolute -top-3 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute -top-3 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                 Most Popular
               </div>
             )}
 
             {/* Road Restriction Warning */}
             {isNotAllowedOnRoad(skip.size) && (
-              <div className="absolute bottom-43 left-6 z-20 mb-4.5 h-54 overflow-hidden rounded-md">
+                <div className="absolute bottom-43 left-6 z-20 mb-4.5 h-54 overflow-hidden rounded-md">
                 <div className="bg-red-600 px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +182,7 @@ const SkipHire = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     className="text-black"
-                  >
+                    >
                     <circle cx="12" cy="12" r="10" />
                     <line x1="12" y1="8" x2="12" y2="12" />
                     <line x1="12" y1="16" x2="12.01" y2="16" />
@@ -193,19 +194,21 @@ const SkipHire = () => {
               </div>
             )}
 
+
+
             {/* Skip Image */}
             {skip.image && (
-              <div className="mb-4 h-48 overflow-hidden rounded-md">
+                <div className="mb-4 h-48 overflow-hidden rounded-md">
                 <img
                   src={skip.image}
                   alt={`${skip.size} skip`}
                   className={`w-full h-full object-cover ${
-                    selectedSkip === skip.id ? "opacity-90" : "opacity-100"
-                  }`}
-                  onError={(e) => {
-                    e.target.src = "../public/images/4-yarder-skip.jpg";
-                  }}
-                />
+                      selectedSkip === skip.id ? "opacity-90" : "opacity-100"
+                    }`}
+                    onError={(e) => {
+                        e.target.src = "../public/images/4-yarder-skip.jpg";
+                    }}
+                    />
               </div>
             )}
 
@@ -213,16 +216,16 @@ const SkipHire = () => {
             <div className="mb-4">
               <h2
                 className={`text-2xl font-bold ${
-                  selectedSkip === skip.id ? "text-white" : "text-gray-900"
+                    selectedSkip === skip.id ? "text-white" : "text-gray-900"
                 }`}
-              >
+                >
                 {skip.size}
               </h2>
               <p
                 className={`text-sm mt-1 ${
-                  selectedSkip === skip.id ? "text-blue-100" : "text-gray-600"
+                    selectedSkip === skip.id ? "text-blue-100" : "text-gray-600"
                 }`}
-              >
+                >
                 {skip.description}
               </p>
             </div>
@@ -232,26 +235,26 @@ const SkipHire = () => {
               <div className="flex justify-between items-center mb-3">
                 <span
                   className={`text-2xl font-bold ${
-                    selectedSkip === skip.id ? "text-white" : "text-gray-900"
-                  }`}
-                >
+                      selectedSkip === skip.id ? "text-white" : "text-gray-900"
+                    }`}
+                    >
                   {formatPrice(skip.price)}
                 </span>
                 <span
                   className={`text-xs px-3 py-1 rounded-full ${
-                    selectedSkip === skip.id
+                      selectedSkip === skip.id
                       ? "bg-gray-50 text-blue-500"
                       : "bg-gray-100 text-gray-800"
-                  }`}
-                >
+                    }`}
+                    >
                   {skip.duration}
                 </span>
               </div>
               <div
                 className={`text-sm ${
-                  selectedSkip === skip.id ? "text-blue-200" : "text-red-600"
+                    selectedSkip === skip.id ? "text-blue-200" : "text-red-600"
                 }`}
-              >
+                >
                 {/* <span className="font-medium">Dimensions:</span>{" "}
                 {skip.dimensions} */}
               </div>
@@ -261,12 +264,12 @@ const SkipHire = () => {
             <button
               className={`w-full py-2 px-4 rounded-md font-medium transition-colors duration-200
                 ${
-                  selectedSkip === skip.id
+                    selectedSkip === skip.id
                     ? "bg-green-500 text-white hover:bg-green-600"
                     : "bg-blue-600 text-white hover:bg-blue-700"
                 }`}
-              onClick={() => handleSelect(skip.id)}
-            >
+                onClick={() => handleSelect(skip.id)}
+                >
               {selectedSkip === skip.id ? "Selected ✓" : "Select This Skip"}
             </button>
           </div>
@@ -275,15 +278,15 @@ const SkipHire = () => {
 
       {/* Selection Summary */}
       {selectedSkip && (
-        <div className="bg-gray-50 rounded-lg p-6 text-center">
+          <div className="bg-gray-50 rounded-lg p-6 text-center">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
             You've selected the{" "}
             {skipSizes.find((s) => s.id === selectedSkip).size} skip
           </h3>
           {isNotAllowedOnRoad(
-            skipSizes.find((s) => s.id === selectedSkip).size
-          ) && (
-            <div className="bg-blue-500 border-l-4 border-gray-900 text-gray-100 p-4 mb-4">
+              skipSizes.find((s) => s.id === selectedSkip).size
+            ) && (
+                <div className="bg-blue-900 border-l-4 border-gray-900 text-gray-100 p-4 mb-4">
               <div className="flex items-center justify-center">
                 <svg
                   className="w-5 h-5 mr-2"
@@ -291,13 +294,13 @@ const SkipHire = () => {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
+                    ></path>
                 </svg>
                 <span className="font-bold"></span> Imagery and
                 information shown throughout this website may not reflect the
