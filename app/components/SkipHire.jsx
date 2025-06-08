@@ -112,7 +112,7 @@ const SkipHire = () => {
       image:
         "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/40-yarder-skip.jpg", // Added image path
     },
-    // ... other skip sizes (add images to these as well)
+    
   ];
 
   const handleSelect = (id) => {
@@ -123,7 +123,7 @@ const SkipHire = () => {
     return `£${(price / 100).toFixed(2)}`;
   };
 
-  // Check if skip is not allowed on road (10+ yards)
+  
   const isNotAllowedOnRoad = (size) => {
       const yardSize = parseInt(size);
     return yardSize >= 10;
@@ -132,7 +132,7 @@ const SkipHire = () => {
   return (
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Page Header */}
+      
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
           Choose Your Skip Size
