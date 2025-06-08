@@ -306,7 +306,7 @@ const SkipHire = () => {
                 information shown throughout this website may not reflect the
                 exact shape or size specification, colours may vary, options
                 and/or accessories may be featured at additional cost.
-                {/* <span className="font-bold text-red-800"> NOT ALLOWED </span> */}
+                
               </div>
             </div>
           )}
