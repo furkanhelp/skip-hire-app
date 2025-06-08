@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skip Hire App – "Choose Your Skip Size" Redesign
 
-## Getting Started
+This project is a front-end implementation of the **"Choose Your Skip Size"** page for REMWaste, built entirely from scratch using **React**, **JavaScript**, and **TailwindCSS**. It was created as part of a technical challenge for a job application.
 
-First, run the development server:
+## 💡 My Approach
+
+My goal was to design and build a clean, user-friendly interface that makes it easy for customers to choose the right skip for their needs. I focused on clarity, simplicity, and responsive layout without relying on external UI libraries or frameworks.
+
+Rather than over-engineering the solution, I prioritized a lean, intuitive design that could be easily extended in the future. Every component was handcrafted to reflect an understanding of both user experience and clean code structure.
+
+> ✨ “I believe great user experiences are built through simple, thoughtful design — not just fancy components.”
+
+## 🔍 Key Features
+
+- ✅ Fully responsive layout built with Flexbox and Grid
+- ✅ Skip cards display size, capacity, and typical use cases
+- ✅ Clear call-to-action to help users proceed
+- ✅ Clean, readable codebase written in vanilla React (no dependencies)
+- ✅ Designed with real users in mind — quick, intuitive, and frictionless
+
+## 🧱 Tech Stack
+
+- **React**
+- **CSS**
+- **Next.Js** (for fast development build and preview)
+
+## 🚀 Getting Started
+
+To run the project locally:
 
 ```bash
+git clone https://github.com/furkanhelp/skip-hire-app.git
+cd skip-hire-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+Open your browser and navigate to:
+http://localhost:5173
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📌 Notes
+• This project is intentionally minimal to showcase:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+• Practical UI/UX decisions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+• Clean code and modular structure
 
-## Learn More
+• Strong grasp of core React fundamentals
 
-To learn more about Next.js, take a look at the following resources:
+⚙️ “Sometimes, simplicity is the most effective form of elegance — especially when paired with a clear purpose.”
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+About Me
+I'm a full-stack developer who enjoys turning complex problems into simple, elegant solutions. With this project, I aimed to demonstrate not only my ability to build interfaces from scratch, but also my commitment to writing clean, maintainable code that delivers real user value.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for taking the time to review my submission.
