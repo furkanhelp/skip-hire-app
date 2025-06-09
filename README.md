@@ -34,8 +34,6 @@ cd skip-hire-app
 npm install
 npm run dev
 
-Open your browser and navigate to:
-http://localhost:5173
 ```
 
 📌 Notes
@@ -46,8 +44,6 @@ http://localhost:5173
 • Clean code and modular structure
 
 • Strong grasp of core React fundamentals
-
-⚙️ “Sometimes, simplicity is the most effective form of elegance — especially when paired with a clear purpose.”
 
 About Me
 I'm a full-stack developer who enjoys turning complex problems into simple, elegant solutions. With this project, I aimed to demonstrate not only my ability to build interfaces from scratch, but also my commitment to writing clean, maintainable code that delivers real user value.

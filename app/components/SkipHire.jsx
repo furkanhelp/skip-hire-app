@@ -278,7 +278,7 @@ const SkipHire = () => {
 
       {/* Selection Summary */}
       {selectedSkip && (
-          <div className="bg-gray-50 rounded-lg p-6 text-center">
+          <div className="bg-indigo-200 rounded-lg p-6 text-center">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
             You've selected the{" "}
             {skipSizes.find((s) => s.id === selectedSkip).size} skip
