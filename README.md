@@ -21,7 +21,7 @@ Rather than over-engineering the solution, I prioritized a lean, intuitive desig
 ## 🧱 Tech Stack
 
 - **React**
-- **CSS**
+- **TailwindCSS**
 - **Next.Js** (for fast development build and preview)
 
 ## 🚀 Getting Started
